@@ -160,6 +160,7 @@
 
 .main_3 {
     background-color: rgb(247, 248, 249);
+    overflow: hidden;
 }
 
 .main_3>article {

@@ -48,16 +48,16 @@ a {
     display: flex;
     justify-content: space-between;
     padding: 20px 40px 0 40px;
-    z-index: 2;
+    z-index: 4;
     transition: 0.1s;
 }
 
-.header>h1 {
+.header>a>h1 {
     width: 115px;
 }
 
-.header.active>h1 {
-    content: url(../img/logo-blue.svg);
+.header.active>a>h1 {
+    content: url(../img/common/logo-blue.svg);
 }
 
 /* =================================================================================
@@ -70,6 +70,7 @@ a {
     background: none;
     border: none;
     position: relative;
+    z-index: 2;
 }
 
 .trigger_menu:hover {
@@ -128,7 +129,7 @@ a {
     width: 30%;
     background-color: rgb(40, 50, 60);
     height: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 .menu_sub.active {
@@ -141,6 +142,7 @@ a {
     font-weight: bold;
     font-size: 18px;
     line-height: 250%;
+    width: 100%;
 }
 
 .menu_sub a:hover {
@@ -285,7 +287,6 @@ footer {
     padding: 50px 0 100px 0;
     display: flex;
     justify-content: center;
-
 }
 
 .footer {
@@ -354,7 +355,7 @@ footer {
         display: flex;
         justify-content: space-between;
         padding: 20px;
-        z-index: 3;
+        z-index: 4;
         transition: 0.1s;
 
     }
