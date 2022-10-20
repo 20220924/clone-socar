@@ -26,7 +26,7 @@
             <div>
                 <nav class="menu_sub">
                     <a href="./socar_guide.html">이용 안내</a>
-                    <a href="#">요금 안내</a>
+                    <a href="./socar_fare.html">요금 안내</a>
                     <a href="./socar_benefit.html">혜택 안내</a>
                     <a href="#">쏘카존 개설 신청</a>
                     <span></span>
@@ -76,7 +76,7 @@
             </section>
 
             <section class="main_3">
-                <div>
+                <div class="active">
                     <ul>
                         <a href="">
                             <li>
@@ -291,7 +291,7 @@
 
         <div class="m_menu">
             <ul>
-                <a href="">
+                <a href="./socar_service.html">
                     <li>
                         <div></div>카셰어링 쏘카
                     </li>
@@ -311,14 +311,14 @@
                         <div></div>쏘카 페어링
                     </li>
                 </a>
-                <a href="">
-                    <li><img src="./img/service/arrow-g.svg" alt="">쏘카 이용 안내</li>
+                <a href="./socar_guide.html">
+                    <li><img src="./img/common/arrow-g.svg" alt="">쏘카 이용 안내</li>
                 </a>
-                <a href="">
-                    <li><img src="./img/service/arrow-g.svg" alt="">요금 보기</li>
+                <a href="./socar_fare.html">
+                    <li><img src="./img/common/arrow-g.svg" alt="">요금 보기</li>
                 </a>
-                <a href="">
-                    <li><img src="./img/service/arrow-g.svg" alt="">혜택 확인하기</li>
+                <a href="./socar_benefit.html">
+                    <li><img src="./img/common/arrow-g.svg" alt="">혜택 확인하기</li>
                 </a>
             </ul>
         </div>
@@ -386,14 +386,16 @@
 
         const menu_event_1 = document.querySelector('.menuBox_1');
         const menu_event_2 = document.querySelector('.menuBox_2');
-        const menuEvent = document.querySelector('.main_3');
+        const menuEvent = document.querySelectorAll('.main_3 div');
         menu_event_1.onclick = function () {
-            menuEvent.classList.remove('active');
+            menuEvent[0].classList.add('active');
+            menuEvent[1].classList.remove('active');
             menu_event_1.classList.add('active');
             menu_event_2.classList.remove('active');
         }
         menu_event_2.onclick = function () {
-            menuEvent.classList.add('active');
+            menuEvent[0].classList.remove('active');
+            menuEvent[1].classList.add('active');
             menu_event_1.classList.remove('active');
             menu_event_2.classList.add('active');
         }
