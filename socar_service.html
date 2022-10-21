@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script defer src="./js/socar.js"></script>
+
     <link rel="stylesheet" href="./css/socar_service.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 </head>
@@ -219,26 +221,6 @@
             <span>쏘카 앱 다운로드 <b><i class="bi bi-arrow-down"></i></b></span>
         </a>
     </div>
-
-    <script>
-        const menu = document.querySelector('.trigger_menu');
-        const nav = document.querySelector('.menu_sub');
-        const header_bg = document.querySelector('.header_bg');
-        const bi = document.querySelector('.header');
-        menu.onclick = function () {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-            header_bg.classList.toggle('active');
-            bi.classList.toggle('active');
-        }
-        header_bg.onclick = function () {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-            header_bg.classList.toggle('active');
-            bi.classList.toggle('active');
-        }
-
-    </script>
 
 </body>
 

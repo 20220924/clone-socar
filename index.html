@@ -13,6 +13,8 @@
     <meta property="og:image"                   content="github URL"/>
 
     <title>Document</title>
+    <script defer src="./js/socar.js"></script>
+    
     <link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
     <link rel="stylesheet" href="./css/socar_main.css">
@@ -177,25 +179,6 @@
         </a>
     </div>
 
-    <script>
-        const menu = document.querySelector('.trigger_menu');
-        const nav = document.querySelector('.menu_sub');
-        const header_bg = document.querySelector('.header_bg');
-        const bi = document.querySelector('.header');
-        menu.onclick = function () {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-            header_bg.classList.toggle('active');
-            bi.classList.toggle('active');
-        }
-        header_bg.onclick = function () {
-            menu.classList.toggle('active');
-            nav.classList.toggle('active');
-            header_bg.classList.toggle('active');
-            bi.classList.toggle('active');
-        }
-
-    </script>
 </body>
 
 </html>
