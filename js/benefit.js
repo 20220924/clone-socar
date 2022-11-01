@@ -1,20 +1,3 @@
-const menu = document.querySelector('.trigger_menu');
-const nav = document.querySelector('.menu_sub');
-const header_bg = document.querySelector('.header_bg');
-const bi = document.querySelector('.header');
-menu.onclick = function () {
-    menu.classList.toggle('active');
-    nav.classList.toggle('active');
-    header_bg.classList.toggle('active');
-    bi.classList.toggle('active');
-}
-header_bg.onclick = function () {
-    menu.classList.toggle('active');
-    nav.classList.toggle('active');
-    header_bg.classList.toggle('active');
-    bi.classList.toggle('active');
-}
-
 const menu_event_1 = document.querySelector('.menuBox_1');
 const menu_event_2 = document.querySelector('.menuBox_2');
 const menuEvent = document.querySelectorAll('.main_3 div');
@@ -30,5 +13,3 @@ menu_event_2.onclick = function () {
     menu_event_1.classList.remove('active');
     menu_event_2.classList.add('active');
 }
-
-

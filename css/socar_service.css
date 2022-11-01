@@ -42,7 +42,7 @@
 .main>div>section>div>div:nth-of-type(1)>h2 {
     white-space: pre-line;
     color: rgb(55, 69, 83);
-    animation: fadeLeft 0.7s forwards;
+    /* animation: fadeLeft 0.7s forwards; */
 
 }
 
@@ -52,12 +52,12 @@
     color: rgb(170, 170, 170);
     font-weight: bold;
     font-size: 18px;
-    animation: fadeLeft-2 0.7s forwards;
+    /* animation: fadeLeft-2 0.7s forwards; */
 
 }
 
 .main>div>section>div>div:nth-of-type(2) {
-    animation: fadeLeft-3 1s forwards;
+    /* animation: fadeLeft-3 1s forwards; */
 
     width: 450px;
 }
@@ -66,7 +66,30 @@
     width: 100%;
 }
 
+.main section{
+    opacity: 0;
+}
 
+.main section.active{
+    opacity: 1;
+}
+
+.main>div>section.active>div>div:nth-of-type(1)>h2 {
+    animation: fadeLeft 0.7s forwards;
+}
+
+.main>div>section.active>div>div:nth-of-type(1)>p {
+    animation: fadeLeft-2 0.7s forwards;
+}
+
+.main>div>section.active>div>div:nth-of-type(2) {
+    animation: fadeLeft-3 1s forwards;
+}
+
+.main>div>section.active>a {
+    animation: fadeinUp 0.3s 0.5s forwards;
+
+}
 
 
 .main>div>section>a {
@@ -81,7 +104,8 @@
     font-size: 14px;
     font-weight: bold;
     transition: all 0.2s;
-    animation: fadeinUp 0.3s forwards;
+    opacity: 0;
+    /* animation: fadeinUp 0.3s forwards; */
 
 }
 
