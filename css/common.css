@@ -51,11 +51,14 @@ a {
     padding: 20px;
     z-index: 7;
     opacity: 0;
-    transition: 0.3s;
+    transition: 0.4s;
+    transform: translateY(-100%);
 }
 
 .header.active {
     opacity: 1;
+    transform: translateY(0%);
+
     
 }
 .bi{
@@ -139,7 +142,7 @@ a {
     top: 0;
     width: 30%;
     background-color: rgb(40, 50, 60);
-    height: 100%;
+    height: 120vh;
     z-index: 6;
 }
 
@@ -187,7 +190,7 @@ a {
     display: none;
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: 120vh;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.800);
