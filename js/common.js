@@ -24,8 +24,6 @@ let offset;
 $(window).on('mousewheel',function(){
     let delta = event.wheelDelta;
     h = pageYOffset;
-    console.log(`현재위치 : ${h}`);
-    console.log(delta);
     if(delta < 0){
         header.classList.remove('active');
     }else{
