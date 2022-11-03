@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/business.css">
+
+    <script defer src="./js/business.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -20,15 +25,36 @@
                 <p>관리자 로그인</p>
             </div>
         </div>
+        <button>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </header>
+    <section class="menu_bg">
+        <div></div>
+        <ul>
+            <li><a href="">공지사항</a></li>
+            <li><a href="">자주 묻는 질문</a></li>
+            <li><a href="">기업 등록</a></li>
+            <li><a href="">구성원 직접 등록</a></li>
+            <li><a href="">관리자 로그인</a></li>
+        </ul>
+    </section>
 
-    <section class="main_1">
+    <a href="">
+        <div class="fixed">
+            무료로 시작하기
+        </div>
+    </a>
+    <section class="thum">
         <h2>일하는 사람들의 이동 파트너,
             쏘카비즈니스</h2>
-        </section>
         
-        <section class="main">
-        <section class="main_2">
+    </section>
+
+    <section class="main">
+        <section class="main_1">
             <div>
                 <h2>쏘카비즈니스</h2>
                 <p>기존 업무 이동수단의 불필요한
@@ -40,10 +66,154 @@
                 </div>
             </div>
             <div>
-                <img src="./img/business/다운로드.png" alt="">
+                <svg>
+                    <polyline points="350,-10 50,600 2000,600"></polyline>
+                </svg>
+                <img src="./img/business/car.png" alt="">
             </div>
         </section>
+
+        <section class="main_2">
+            <h2>쏘카비즈니스를 선택하는 이유</h2>
+            <div>
+                <article>
+                    <img src="./img/business/third-section-img1-pc.png" alt="">
+                    <h3>외근 갈 때 편리하게</h3>
+                    <p>사무실, 집 주변 3분 거리
+                        또는 내가 있는 곳으로 불러서 출발</p>
+                </article>
+                <article>
+                    <img src="./img/business/third-section-img2-pc.png" alt="">
+                    <h3>전국 KTX/SRT 쏘카로 환승</h3>
+                    <p>전국 KTX/SRT 역사, 터미널, 공항에서
+                        쏘카로 환승해 장거리 운전 부담을 줄여보세요.</p>
+                </article>
+                <article>
+                    <img src="./img/business/third-section-img3-pc.png" alt="">
+                    <h3>임직원 복지 혜택</h3>
+                    <p>출/퇴근, 주말 차량 이용이 필요한
+                        임직원들에게 할인 혜택을 제공하세요.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="main_3">
+            <h2>관리자와 임직원 모두가
+                만족하는 쏘카비즈니스</h2>
+            <div>
+                <article>
+                    <h2>관리자</h2>
+                    <ul>
+                        <li>ㆍ<b>불필요한 고정비</b>(렌트료, 주차비)가 줄어들어요.</li>
+                        <li>ㆍ<b>배차, 키 분출</b> 차량 관련 업무가 사라져요.</li>
+                        <li>ㆍ<b>예약 및 결제 내역</b>도 쉽게 확인 할 수 있어요.</li>
+                        <li>ㆍ<b>주행요금과 하이패스까지</b> 자동 정산돼요.</li>
+                    </ul>
+                    <img src="./img/business/fourth-section-img1.png" alt="">
+                </article>
+                <article>
+                    <h2>임직원</h2>
+                    <ul>
+                        <li>ㆍ<b>내 근처 3분거리</b> 쏘카존에서 이용할 수 있어요.</li>
+                        <li>ㆍ<b>전국 KTX역, 공항</b>에서 이동이 편해져요.</li>
+                        <li>ㆍ<b>이용 및 결제 증빙</b> 업무가 줄어들어요.</li>
+                        <li>ㆍ<b>경차부터 SUV</b>까지 이용 차종이 다양해요.</li>
+                    </ul>
+                    <img src="./img/business/fourth-section-img2.png" alt="">
+                </article>
+            </div>
+        </section>
+
+        <section class="main_4">
+            <h2>우리 회사에 딱 맞는 상품을
+                선택 후 바로 이용하세요</h2>
+            <article>
+                <img src="./img/business/fifth-section-img1.png" alt="">
+                <div>
+                    <h2>비즈니스 멤버십</h2>
+                    <p>시간 단위로 필요한 만큼
+                        전국 쏘카 이용</p>
+                </div>
+            </article>
+            <article>
+                <img src="./img/business/fifth-section-img2.png" alt="">
+                <div>
+                    <h2>비즈니스 플랜</h2>
+                    <p>월 단위로 이용하는
+                        우리 회사 전용 쏘카</p>
+                </div>
+            </article>
+            <a href="">
+                <div>
+                    상품 자세히 보기
+                </div>
+            </a>
+        </section>
+
+        <section class="main_5">
+            <h2>이미 많은 기업들이
+                쏘카와 함께 하고 있습니다</h2>
+            <div>
+                <div>
+                    <div>
+                        <img src="./img/business/cooperation1-pc.png" alt="">
+                        <img src="./img/business/cooperation1-pc.png" alt="">
+                    </div>
+                    <div>
+                        <img src="./img/business/cooperation2-pc.png" alt="">
+                        <img src="./img/business/cooperation2-pc.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+            <a href="">
+                <div>고객 사례 보기</div>
+            </a>
+        </section>
+
+        <section class="main_6">
+            <h2>우리 회사를 위한 맞춤 상품을
+                안내 받고 싶으신가요?</h2>
+            <a href="">
+                <div>
+                    <p>도입 문의하기</p>
+                    <p>></p>
+                </div>
+            </a>
+        </section>
     </section>
+
+    <footer class="footer">
+        <section class="footer_1">
+            <h2><img src="./img/business/footer-logo-pc.png" alt=""></h2>
+            <div></div>
+            <div>
+                <ul>
+                    <li>쏘카 이용약관</li>
+                    <span></span>
+                    <li><b>개인정보 처리방침</b></li>
+                    <span></span>
+                    <li>공지사항</li>
+                    <span></span>
+                    <li>자주 묻는 질문</li>
+                </ul>
+            </div>
+        </section>
+
+        <div></div>
+
+        <section class="footer_2">
+            <p>(주)쏘카 통신판매업 신고: 제 2019-제주오라-3호, 사업자등록번호: 616-81-90529, 대표자: 박재욱</p>
+            <p>Tel: 1661-3315, Fax: 02-6969-9333 주소: 제주특별자치도 제주시 연미길 42 (오라삼동), 사업자정보 확인</p>
+        </section>
+        
+        <section class="footer_3">
+            <p>© 2022 SOCAR ALL rights reserved.</p>
+        </section>
+    </footer>
 
 </body>
 
