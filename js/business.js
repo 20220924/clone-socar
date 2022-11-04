@@ -31,10 +31,13 @@ function init() {
 
 const menu_bg = document.querySelector('.menu_bg');
 const menu=document.querySelector('.header button');
+const body=document.querySelector('body');
+
 
 $('.header button').on('click',function(){
     menu_bg.classList.toggle('active');
     menu.classList.toggle('active');
+    body.classList.toggle('active');
 })
 
 

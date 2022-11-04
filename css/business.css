@@ -567,6 +567,9 @@ polyline {
 
 
 @media (max-width:1200px) {
+    body.active{
+        overflow: hidden;
+    }
     .header {
         position: fixed;
         padding: 20px 20px;
